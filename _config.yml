@@ -21,8 +21,9 @@ description: > # this means to ignore newlines until "baseurl:"
   algumas das principais especificações técnicas no segundo semestre de 2017.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rfc.pt.webiwg.org" # the base hostname & protocol for your site
-twitter_username: webiwg
-github_username:  webiwg
+twitter_username: WebIWG
+github_username:  WebIWG
+github_repository: webiwg/rfc-pt
 
 # Build settings
 markdown: kramdown
