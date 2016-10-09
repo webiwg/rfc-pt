@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-  <title>Tradução de RFCs da IETF para Português</title>
-</head>
+---
+layout: default
+---
 
-<body>
-  <h1>Tradução de RFCs da IETF para Português</h1> 
-    Site em desenvolvimento.
-  <a href="https://github.com/webiwg/rfc-pt">Visite o repositório RFCs em português</a>
-</body>
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
